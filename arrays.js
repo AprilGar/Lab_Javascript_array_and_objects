@@ -90,13 +90,18 @@ stations.splice(4,1);
  * Is Durham one of the stops?
  */
 
-stoppingAtDurham = stations.indexOf("Durham");
+//stoppingAtDurham = stations.indexOf("Durham");
+stoppingAtDurham = stations.includes("Durham");
 
-// console.log(stoppingAtDurham);
+//console.log(stoppingAtDurham);
 // print -1 so assume not from that
 
 /**
  * Q9.
  * If we are stopping at Durham, print "Yay Durham!" to the terminal. If not print "Aww...".
  */
-if ()
+if (stations.includes("Durham")){
+    console.log("Yay Durham!");
+} else {
+    console.log("Aww...");
+}
